@@ -57,10 +57,10 @@ func handleWxMessage(msg *message.MixMessage) (replyMsg string) {
 				bot := chat.GetChatBot(config.GetUserBotType(userId))
 				replyMsg = bot.Chat(userId, msgContent)
 			} else {
-				replyMsg = "功能还在开发中"
+				replyMsg = "Uncle is dozing off."
 			}
 		} else {
-			replyMsg = "功能还在开发中"
+			replyMsg = "Uncle is nodding off."
 		}
 		return
 	}
